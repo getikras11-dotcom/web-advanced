@@ -1,0 +1,8 @@
+ul{
+    list-style-type: circle;
+}
+
+ul{
+    list-style-image: url(../img/icon.png);
+}
+
