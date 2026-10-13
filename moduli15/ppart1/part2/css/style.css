@@ -1,0 +1,29 @@
+body{
+    margin:0;
+}
+*{
+    box-sizing-box
+}
+#horizontal-menu{
+    list-style-type: none;
+    margin:0;
+    padding:0;
+    overflow:hidden;
+    background-color:#333;
+}
+#horizontal-menu li {
+    fkoat:left;
+}
+#horizontal-menu lli a{
+    display:block;
+    text-decoration:none;
+    padding:14px 16px;
+    color:white;
+    text-align:center;
+}
+#horizontal-menu li a:hover:not(.active){
+    background-color:#111;
+}
+.active{
+    background-color:rgba(40, 155, 40, 0.692);
+}
