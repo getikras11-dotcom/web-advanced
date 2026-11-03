@@ -2,14 +2,14 @@
     transform: scale(1);
     transition: .9s ease-in-out;
 }
-#planet1:hover img{
+#foto1:hover img{
     transform: scale(2.9);
 }
-#planet2 img{
+#foto2 img{
     margin-left: 0;
     transition: 1.9s ease-in-out;
 }
-#planet2:hover img{
+#foto2:hover img{
     margin-left: 90px;
 }
 #foto3 img{
@@ -17,7 +17,14 @@
 
     transition: 1.9 ease-in-out;
 }
-#planet3:hover img{
+#foto3:hover img{
     filter:blur(0);
     transform: scale(2.9);
+}
+#foto4 img{
+    filter: grayscale(100%);
+    
+}
+#foto4:hover img{
+    filter: grayscale(0%);
 }
