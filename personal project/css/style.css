@@ -3,12 +3,19 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial;
-    background-image: url("../images/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: white;
     min-height: 100vh;
 }
+
+
+/* RADIO BUTTONS */
+
+input[type="radio"] {
+    display: none;
+}
+
+
+/* NAVBAR */
 
 .navbar {
     display: flex;
@@ -25,10 +32,15 @@ body {
     width: 70%;
 }
 
-.menu a {
+.menu label {
     text-decoration: none;
     color: #555;
     font-size: 28px;
+    cursor: pointer;
+}
+
+.menu label:hover {
+    color: black;
 }
 
 .logo {
@@ -44,6 +56,37 @@ body {
     height: 120px;
     object-fit: contain;
 }
+
+
+/* PAGE SETTINGS */
+
+.content {
+    display: none;
+}
+
+
+/* HOME */
+
+#home-btn:checked ~ .home {
+    display: block;
+}
+
+
+/* ABOUT US */
+
+#about-btn:checked ~ .about {
+    display: block;
+}
+
+
+/* CARS */
+
+#cars-btn:checked ~ .cars-page {
+    display: block;
+}
+
+
+/* HOME AND CARS CARDS */
 
 .cars {
     display: flex;
@@ -80,3 +123,124 @@ body {
     margin-top: 30px;
 }
 
+
+/* ABOUT US */
+
+.about {
+    padding: 30px;
+}
+
+.about h1 {
+    text-align: center;
+    font-size: 40px;
+    color: #333;
+}
+
+.about-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: lightgray;
+    width: 80%;
+    margin: 30px auto;
+    padding: 30px;
+    border-radius: 30px;
+    gap: 30px;
+}
+
+.about-image {
+    width: 40%;
+}
+
+.about-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.about-text {
+    width: 55%;
+}
+
+.about-text h2 {
+    font-size: 27px;
+    color: #333;
+}
+
+.about-text p {
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.about-bottom {
+    text-align: center;
+    background-color: lightgray;
+    width: 80%;
+    margin: 30px auto;
+    padding: 20px;
+    border-radius: 25px;
+}
+
+.about-bottom p {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+
+/* CARS PAGE */
+
+.cars-page h1 {
+    text-align: center;
+    font-size: 40px;
+    margin-top: 40px;
+}
+
+
+/* RESPONSIVE */
+
+@media (max-width: 750px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 15px;
+    }
+
+    .menu {
+        width: 100%;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    .menu label {
+        font-size: 18px;
+    }
+
+    .logo {
+        width: 100%;
+    }
+
+    .cars {
+        flex-direction: column;
+        gap: 30px;
+    }
+
+    .card {
+        width: 80%;
+    }
+
+    .about-container {
+        flex-direction: column;
+        width: 80%;
+    }
+
+    .about-image,
+    .about-text {
+        width: 100%;
+    }
+
+    .about-bottom {
+        width: 80%;
+    }
+
+}
