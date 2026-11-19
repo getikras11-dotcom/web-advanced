@@ -8,14 +8,13 @@ body {
 }
 
 
-/* RADIO BUTTONS */
+
 
 input[type="radio"] {
     display: none;
 }
 
 
-/* NAVBAR */
 
 .navbar {
     display: flex;
@@ -58,35 +57,34 @@ input[type="radio"] {
 }
 
 
-/* PAGE SETTINGS */
+
 
 .content {
     display: none;
 }
 
 
-/* HOME */
+
 
 #home-btn:checked ~ .home {
     display: block;
 }
 
 
-/* ABOUT US */
+
 
 #about-btn:checked ~ .about {
     display: block;
 }
 
 
-/* CARS */
 
 #cars-btn:checked ~ .cars-page {
     display: block;
 }
 
 
-/* HOME AND CARS CARDS */
+
 
 .cars {
     display: flex;
@@ -124,7 +122,7 @@ input[type="radio"] {
 }
 
 
-/* ABOUT US */
+
 
 .about {
     padding: 30px;
@@ -187,7 +185,7 @@ input[type="radio"] {
 }
 
 
-/* CARS PAGE */
+
 
 .cars-page h1 {
     text-align: center;
@@ -196,7 +194,6 @@ input[type="radio"] {
 }
 
 
-/* RESPONSIVE */
 
 @media (max-width: 750px) {
 
@@ -242,5 +239,4 @@ input[type="radio"] {
     .about-bottom {
         width: 80%;
     }
-
-}
+    
